@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOMATH</title>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <link rel="stylesheet"  href="{{url_for('static', filename='css/main.css')}}"/>
+    </head>
+<body>
+    <div class="in">
+        <img id = "logo" src = "{{ url_for('static', filename='image/logo.png') }}"> <br> <br>
+        <div class="button-container">
+            <button style="cursor: pointer;">문제 재도전중</button>
+        </div>
+        <div class = "in_cal">{{ equation }} =&nbsp; 
+            <form action="/check" method="post"> 
+                <input type="text" name="answer" onkeyup="if(window.event.keyCode==13){post}">
+                <input type="hidden" name="equation" value="{{ equation }}">
+            </form>
+        </div>
+    </div>
+</body>

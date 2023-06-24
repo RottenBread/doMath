@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow: auto;
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 300px;
+}
+
+
+.in_cal {
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  41px 41px 82px #797979,
+                -41px -41px 82px #ffffff;
+    height: 500px;
+    width: 1200px;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:600%
+}
+
+.in_cal_result {
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  41px 41px 82px #797979,
+                -41px -41px 82px #ffffff;
+    height: 500px;
+    width: 1200px;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:600%
+}
+
+input {
+    width:200px;
+    height:100px;
+    font-size:100px;
+}
+
+.button-container {
+    position: fixed;
+    top: 90px;
+    right: 280px;
+}
+
+.button-container button {
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow:  41px 41px 82px #635d5d,
+                -41px -41px 82px #ffffff;
+    height: 50px;
+    width: 100px;
+    border: none;
+    margin-left: auto;
+}

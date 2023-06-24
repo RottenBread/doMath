@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta http-equiv="refresh" content="2;url=/">
+<html>
+    <head>
+        <title>DOMATH</title>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <link rel="stylesheet"  href="{{url_for('static', filename='css/main.css')}}"/>
+    </head>
+<body>
+    <div class="in">
+        <img id = "logo" src = "{{ url_for('static', filename='image/logo.png') }}"> <br> <br>
+        <div class="button-container">
+            <button onClick="window.location.reload()" style="cursor: pointer;">문제 바꾸기</button>
+        </div>
+        <div class = "in_cal_result">{{ result }}</div>
+</body>
