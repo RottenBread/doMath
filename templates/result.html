@@ -8,9 +8,7 @@
     </head>
 <body>
     <div class="in">
-        <img id = "logo" src = "{{ url_for('static', filename='image/logo.png') }}"> <br> <br>
-        <div class="button-container">
-            <button onClick="window.location.reload()" style="cursor: pointer;">문제 바꾸기</button>
-        </div>
+        <img id = "logo" src = "{{ url_for('static', filename='image/logo.png') }}">
+        <p>오늘의 정답 횟수: {{ correct_count }} 회</p>
         <div class = "in_cal_result">{{ result }}</div>
 </body>
