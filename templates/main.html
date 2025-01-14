@@ -7,14 +7,13 @@
     </head>
 <body>
     <div class="in">
-        <img id = "logo" src = "{{ url_for('static', filename='image/logo.png') }}"> <br> <br>
-        <div class="button-container">
-            <button onClick="location.href='/'" style="cursor: pointer;">문제 바꾸기</button>
-        </div>
-        <div class = "in_cal">{{ equation }} =&nbsp; 
+        <img id = "logo" src = "{{ url_for('static', filename='image/logo.png') }}">
+        <p>오늘의 정답 횟수: {{ correct_count }} 회</p>
+        <div class = "in_cal">{{ sik }} =&nbsp; 
             <form action="/check" method="post"> 
-                <input type="text" name="answer" onkeyup="if(window.event.keyCode==13){post}">
-                <input type="hidden" name="equation" value="{{ equation }}">
+                <input class = "type_answer" type="text" name="answer">
+                <input type="hidden" name="sik" value="{{ sik }}">
+                <input class = "send_answer" type="submit" value="✔">
             </form>
         </div>
     </div>
