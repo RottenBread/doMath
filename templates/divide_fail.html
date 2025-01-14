@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOMATH</title>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+        <link rel="stylesheet"  href="{{url_for('static', filename='css/main.css')}}"/>
+    </head>
+<body>
+    <div class="in">
+        <img id = "logo" src = "{{ url_for('static', filename='image/logo.png') }}"> 
+        <p>오답입니다. 다시 도전해 보세요.</p>
+        <div class = "in_cal">{{ sik }} =&nbsp; 
+            <form action="/check" method="post"> 
+                <input class = "type_answer" type="text" name="answer">
+                <input class = "type_answer" type="text" name="answer2">
+                <input type="hidden" name="sik" value="{{ sik }}">
+                <input class = "send_answer" type="submit" value="✔">
+            </form>
+        </div>
+    </div>
+</body>
