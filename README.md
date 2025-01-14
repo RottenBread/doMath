@@ -1,6 +1,5 @@
-# doMath - v0.1
+# doMath - v1.0
 Web-based online math problem generator <br>
-Not support minus
 
 # How to use
 1. Run main.py
@@ -8,8 +7,7 @@ Not support minus
 3. Enjoy!
 
 # Next Update
-Will support divide, multiply in next version
+nothing to do yet
 
 # TO-DO
-Number range select <br>
-Support four arithmetic operations
+reduce codes with function
